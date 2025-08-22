@@ -30,11 +30,16 @@ class BackgroundAnimation {
     this.camera.position.z = 5
     
     // Create particles
-    const geometry = new THREE.SphereGeometry(0.02, 8, 8)
+    const geometry = new THREE.SphereGeometry(0.03, 8, 8)
     const material = new THREE.MeshBasicMaterial({ 
-      color: 0x6366f1,
+      // Generate color between primary (#FF0056) and secondary (#F3682B) from style.css with random interpolation
+      color: new THREE.Color().lerpColors(
+        new THREE.Color('#FF0056'),
+        new THREE.Color('#F3682B'),
+        Math.random()
+      ),
       transparent: true,
-      opacity: 0.8
+      opacity: 1
     })
     
     for (let i = 0; i < 200; i++) {

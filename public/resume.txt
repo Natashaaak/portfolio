@@ -1,0 +1,28 @@
+Natálie Kaslová - Resume (Dummy)
+
+Role: Full Stack Developer & Creative Technologist
+Location: Prague, CZ
+
+About
+- Passionate developer focused on modern JavaScript, UX, and 3D web.
+
+Experience
+- Senior Full Stack Developer, TechCorp Inc. (2022 - Present)
+- Frontend Developer, Digital Solutions Ltd. (2020 - 2022)
+
+Education
+- MSc Computer Science, Stanford University (2017 - 2019)
+- BSc Computer Science, MIT (2013 - 2017)
+
+Skills
+- Frontend: React, Vue, JS/TS, HTML, CSS, Three.js
+- Backend: Node.js, Express, Python, Django
+- Tools: Git, Docker, AWS, CI/CD
+
+Links
+- GitHub: https://github.com/Natashaak
+- LinkedIn: https://www.linkedin.com/in/example
+
+Contact
+- Email: hello@example.com
+- Phone: +420 000 000 000
