@@ -40,7 +40,7 @@ A modern, minimalist portfolio website built with Vite, Three.js, and vanilla Ja
 
 1. Clone the repository:
 ```bash
-git clone https://github.com/yourusername/portfolio.git
+git clone https://github.com/natashaaak/portfolio.git
 cd portfolio
 ```
 
@@ -73,7 +73,7 @@ npm run preview
 1. Update the `homepage` field in `package.json` with your GitHub Pages URL:
 ```json
 {
-  "homepage": "https://yourusername.github.io/portfolio"
+  "homepage": "https://natashaaak.github.io/portfolio"
 }
 ```
 
