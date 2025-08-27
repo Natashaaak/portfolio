@@ -130,7 +130,7 @@ body {
 
 /* Hero Section */
 .hero {
-  min-height: 100vh;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -360,6 +360,10 @@ body {
   color: var(--primary-color);
   margin-bottom: 0.5rem;
   font-weight: 500;
+}
+
+.timeline-content span, .project-content span {
+  white-space: nowrap;
 }
 
 .timeline-date {
