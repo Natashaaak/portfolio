@@ -1,5 +1,6 @@
 import './style.css'
 import * as THREE from 'three'
+import { CatModelViewer } from './cat.js'
 
 // Three.js Background Animation
 class BackgroundAnimation {
@@ -244,6 +245,7 @@ class Portfolio {
 document.addEventListener('DOMContentLoaded', () => {
   new BackgroundAnimation()
   new Portfolio()
+  new CatModelViewer()
   
   // Add loading animation
   document.body.classList.add('loaded')
