@@ -1,0 +1,62 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.50 0.50 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl pasted__phong7SG
+illum 4
+Kd 0.62 0.10 0.28
+Ka 0.00 0.00 0.00
+Tf 0.51 0.51 0.51
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 18.00
+newmtl phong2SG
+illum 4
+Kd 0.25 0.55 0.75
+Ka 0.10 0.20 0.30
+Tf 0.00 0.00 0.00
+Ni 1.00
+Ks 0.80 0.80 0.80
+Ns 50.00
+newmtl phong3SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 22.62
+newmtl phong4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.04 0.04 0.04
+Ns 1.37
+newmtl phong5SG
+illum 4
+Kd 0.09 0.09 0.09
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.61 0.61 0.61
+Ns 98.00
+newmtl phong6SG
+illum 4
+Kd 0.37 0.37 0.37
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+Ks 0.72 0.72 0.72
+Ns 98.00
+newmtl phong7SG
+illum 4
+Kd 0.62 0.10 0.28
+Ka 0.00 0.00 0.00
+Tf 0.51 0.51 0.51
+Ni 1.00
+Ks 0.00 0.00 0.00
+Ns 18.00
