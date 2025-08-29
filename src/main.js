@@ -2,6 +2,22 @@ import './style.css'
 import * as THREE from 'three'
 import { CatModelViewer } from './cat.js'
 
+// Simple loading screen management
+function hideLoadingScreen() {
+  const loadingScreen = document.getElementById('loadingScreen')
+  if (loadingScreen) {
+    loadingScreen.classList.add('hidden')
+    // Remove from DOM after animation
+    setTimeout(() => {
+      if (loadingScreen && loadingScreen.parentNode) {
+        loadingScreen.parentNode.removeChild(loadingScreen)
+      }
+    }, 500)
+  }
+  // Show the page
+  document.body.classList.add('loaded')
+}
+
 // Three.js Background Animation
 class BackgroundAnimation {
   constructor() {
@@ -247,8 +263,8 @@ document.addEventListener('DOMContentLoaded', () => {
   new Portfolio()
   new CatModelViewer()
   
-  // Add loading animation
-  document.body.classList.add('loaded')
+  // Hide loading screen after a short delay to ensure everything is loaded
+  setTimeout(hideLoadingScreen, 1000)
 })
 
 // Add some interactive effects
