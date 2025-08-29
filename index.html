@@ -5,14 +5,69 @@
     <link rel="icon" type="image/svg+xml" href="/portfolio/cat.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio Resume</title>
+    
+    <!-- Load CSS -->
+    
+    <!-- Preconnect to external domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/portfolio/assets/index-BFskC162.js"></script>
+    
+    <!-- Minimal loading screen styles -->
+    <style>
+      .loading-screen {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #ffffff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 9999;
+        transition: opacity 0.5s ease;
+      }
+      
+      .loading-screen.hidden {
+        opacity: 0;
+        pointer-events: none;
+      }
+      
+      .loading-spinner {
+        width: 40px;
+        height: 40px;
+        border: 3px solid #e5e7eb;
+        border-top: 3px solid #FF0056;
+        border-radius: 50%;
+        animation: spin 1s linear infinite;
+      }
+      
+      @keyframes spin {
+        0% { transform: rotate(0deg); }
+        100% { transform: rotate(360deg); }
+      }
+      
+      /* Prevent FOUC */
+      body {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+      
+      body.loaded {
+        opacity: 1;
+      }
+    </style>
+    <script type="module" crossorigin src="/portfolio/assets/index-wdtRhH6P.js"></script>
     <link rel="modulepreload" crossorigin href="/portfolio/assets/three-Anga070G.js">
-    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-D2VAq8Aw.css">
+    <link rel="stylesheet" crossorigin href="/portfolio/assets/index-BBebBvFC.css">
   </head>
   <body>
+    <!-- Loading Screen -->
+    <div class="loading-screen" id="loadingScreen">
+      <div class="loading-spinner"></div>
+    </div>
+    
     <div id="app">
       <!-- Three.js Background Canvas -->
       <canvas id="background-canvas"></canvas>
@@ -206,14 +261,15 @@
                   A real-time interactive web application that  
                   enables production monitoring and detailed unit information lookup.
                 </p>
+                <p>Thesis text accesible at: 
+                  <a href="https://dspace.cvut.cz/handle/10467/115235" target="_blank"  class="nav-link">CTU DSpace</a></p>
                 <div class="project-tech">
                   <span>ASP.NET</span>
                   <span>JavaScript</span>
                   <span>Three.js</span>
                 </div>
                 <div class="project-links">
-                  <a href="#" class="project-link" target="_blank">Live Demo</a>
-                  <a href="#" class="project-link" target="_blank">GitHub</a>
+                  <a href="https://github.com/Natashaaak/MesPoliceMan" class="project-link" target="_blank">GitHub</a>
                 </div>
               </div>
             </div>
@@ -259,17 +315,23 @@
             </div>
             <div class="project-card">
               <div class="project-image">
-                <div class="project-placeholder"></div>
+                <div class="project-placeholder">
+                  <img src="/portfolio/project-images/vr_circus.png" alt="VR game" style="width: 100%; height: 100%; object-fit: cover; object-position: top;">
+
+                </div>
               </div>
               <div class="project-content">
-                <h3>Ray tracers</h3>
-                <p>Semester work, implementation of papers...</p>
+                <h3>VR game</h3>
+                <p>You found yourself all alone left in a circus after closing hours, 
+                  there's a hungry lion, acrobatic construction and whole lot of trouble 
+                  in the way of getting out. Good luck escaping!</p>
+                  <p>Cooperation with Bc. Tereza Hlavová</p>
                 <div class="project-tech">
-                  <span>C++</span>
+                  <span>Unity</span>
+                  <span>C#</span>
                 </div>
                 <div class="project-links">
-                  <a href="#" class="project-link">Live Demo</a>
-                  <a href="#" class="project-link">GitHub</a>
+                  <a href="https://github.com/Natashaaak/VRgame" target="_blank" class="project-link">About</a>
                 </div>
               </div>
             </div>
@@ -359,6 +421,6 @@
           <p>&copy; 2025 Natálie Kaslová. All rights reserved.</p>
         </div>
       </footer>
-    </div>
+    </div>
   </body>
 </html>
