@@ -97,15 +97,18 @@ export class CatModelViewer {
     const mtlLoader = new MTLLoader();
     const objLoader = new OBJLoader();
     
+    // Get the base path for assets (works in both dev and production)
+    const basePath = import.meta.env.BASE_URL || '/';
+    
     // Load MTL material first
-    mtlLoader.load('/cat.mtl', (materials) => {
+    mtlLoader.load(`${basePath}cat.mtl`, (materials) => {
       materials.preload();
       
       // Set materials for OBJ loader
       objLoader.setMaterials(materials);
       
       // Load OBJ model with materials
-      objLoader.load('/cat.obj', (object) => {
+      objLoader.load(`${basePath}cat.obj`, (object) => {
         const cat = object;
         this.model = new THREE.Group();
         cat.position.set(0, 0, -5);
