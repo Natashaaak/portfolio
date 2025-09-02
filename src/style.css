@@ -756,6 +756,7 @@ body {
 
 .contact-right {
   height: 500px;
+  min-width: 320px;
   position: relative;
   margin-top: -80px;
   border-radius: 1rem;
