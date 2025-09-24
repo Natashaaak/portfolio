@@ -159,7 +159,7 @@ class Portfolio {
       threshold: 0.1,
       rootMargin: '0px 0px -50px 0px'
     }
-    
+
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -167,21 +167,22 @@ class Portfolio {
         }
       })
     }, observerOptions)
-    
+
     // Add fade-in class to elements
     const sections = document.querySelectorAll('.section')
     sections.forEach(section => {
       section.classList.add('fade-in')
       observer.observe(section)
     })
-    
+
     // Animate stats on scroll
-    const statsObserver = new IntersectionObserver((entries) => {
+    const statsObserver = new IntersectionObserver((entries, obs) => {
       entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          this.animateStats()
-        }
-      })
+          if (entry.isIntersecting) {
+            obs.unobserve(entry.target);
+            this.animateStats()
+          }
+        })
     }, { threshold: 0.5 })
     
     const statsSection = document.querySelector('.about-stats')
