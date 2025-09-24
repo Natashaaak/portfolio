@@ -68,22 +68,6 @@ npm run build
 npm run preview
 ```
 
-## 🌐 Deployment to GitHub Pages
-
-1. Update the `homepage` field in `package.json` with your GitHub Pages URL:
-```json
-{
-  "homepage": "https://natashaaak.github.io/portfolio"
-}
-```
-
-2. Deploy to GitHub Pages:
-```bash
-npm run deploy
-```
-
-3. Go to your GitHub repository settings and enable GitHub Pages from the `gh-pages` branch.
-
 ## 📁 Project Structure
 
 ```
@@ -96,30 +80,6 @@ portfolio/
 ├── package.json         # Project configuration
 └── README.md           # This file
 ```
-
-## 🎨 Customization
-
-### Colors
-Update the CSS custom properties in `src/style.css`:
-```css
-:root {
-  --primary-color: #6366f1;
-  --secondary-color: #8b5cf6;
-  --accent-color: #06b6d4;
-  /* ... other colors */
-}
-```
-
-### Content
-- Update personal information in `index.html`
-- Modify the Three.js background in `src/main.js`
-- Customize animations and effects
-
-### Three.js Background
-The background animation can be customized in the `BackgroundAnimation` class:
-- Change particle count, size, and colors
-- Modify animation speed and behavior
-- Adjust mouse interaction sensitivity
 
 ## 📱 Browser Support
 
