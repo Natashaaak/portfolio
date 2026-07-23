@@ -97,7 +97,7 @@
         <div class="hero-content">
           <h1 class="hero-title">Natálie Kaslová</h1>
           <p class="hero-subtitle">Computer Graphics Developer & Full Stack Developer</p>
-          <p class="hero-description">Turning complex challanges into working code — from idea to visuals.</p>
+          <p class="hero-description">Turning complex challenges into working code — from idea to visuals.</p>
           <div class="hero-cta">
             <a href="#about" class="btn btn-primary">Learn More</a>
             <a href="#projects" class="btn btn-secondary">View Projects</a>
@@ -114,12 +114,16 @@
               <p>I’m a computer graphics and full-stack developer with a&nbsp;passion for learning new things and improving my skills through practice and discussion. 
                 I enjoy problem-solving and building projects that combine design with full control of how things work behind the scenes.</p>
 
-              <p>My main focus is on C#, JavaScript, WebGL and C++, which I have used in projects like a&nbsp;production line monitoring and a&nbsp;hurricane visualization, 
-                both of them you can see in the projects section.
-                I also enjoy working on algorithmic and math challenges that push my understanding further.</p>
+              <p>
+                My main focus is on C#, JavaScript, WebGL, and C++. My projects range from
+                physically based simulations and interactive visualizations to web applications,
+                including highly viscous pigment mixing, hurricane visualization, and production
+                line monitoring. I also enjoy algorithmic and mathematical challenges,
+                particularly those related to software development and computer graphics.
+              </p>
                 <div class="about-stats">
                 <div class="stat">
-                  <span class="stat-number">6+</span>
+                  <span class="stat-number">7+</span>
                   <span class="stat-label">Projects Completed</span>
                 </div>
                 <div class="stat">
@@ -141,7 +145,7 @@
               <div class="timeline-content">
                 <h3>Master of Open Informatics<br>- Computer Graphics</h3>
                 <h4>CTU FEE, Prague</h4>
-                <p class="education-date">2024 - presence</p>
+                <p class="education-date">2024 - 2026</p>
                 <p><span>Rendering algorithms & Data structures,</span> 
                   <span>Computer Vision geometry,</span> 
                   <span>Data Visualization techniques,</span>
@@ -191,9 +195,16 @@
           <h2 class="section-title">Work Experience</h2>
           <div class="education-grid">
             <div class="education-card">
+              <h3>Fullstack Developer</h3>
+              <h4>Centrum Výzkumu Řež s.r.o.</h4>
+              <p class="education-date">April 2026 - Present</p>
+              <p>Developing multi-layered .NET applications using Blazor Server, ASP.NET Core, and Entity Framework Core.</p>
+              </p>
+            </div>
+            <div class="education-card">
               <h3>Trainee in Production Engineering</h3>
               <h4>Daikin Industries Czech Republic s.r.o.</h4>
-              <p class="education-date">2021 - Present</p>
+              <p class="education-date">2021 - 2025</p>
               <p>Development of intern web applications using ASP.NET and production applications with C# .NET.
               <p>Database systems (Oracle).</p>
               </p>
@@ -210,31 +221,37 @@
           <h2 class="section-title">Skills</h2>
           <div class="skills-grid">
             <div class="skill-category">
-              <h3>Frontend</h3>
+              <h3>.NET & Web</h3>
               <div class="skill-items">
-                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">.NET</span>
+                <span class="skill-item">C#</span>
+                <span class="skill-item">ASP.NET Core</span>
+                <span class="skill-item">Blazor Server</span>
+                <span class="skill-item">Entity Framework Core</span>
                 <span class="skill-item">HTML5</span>
                 <span class="skill-item">CSS3</span>
-                <span class="skill-item">WebGL (Three.js)</span>
-                <span class="skill-item">OpenGL</span>
+                <span class="skill-item">JavaScript</span>
+                <span class="skill-item">PostgreSQL</span>
               </div>
             </div>
+
             <div class="skill-category">
-              <h3>Backend</h3>
+              <h3>Programming & Graphics</h3>
               <div class="skill-items">
-                <span class="skill-item">C#</span>
                 <span class="skill-item">C/C++</span>
                 <span class="skill-item">Python</span>
-                <span class="skill-item">SQL (Postgre)</span>
                 <span class="skill-item">CUDA</span>
+                <span class="skill-item">OpenGL</span>
+                <span class="skill-item">WebGL</span>
+                <span class="skill-item">Three.js</span>
               </div>
             </div>
+
             <div class="skill-category">
-              <h3>Other Tools</h3>
+              <h3>Tools</h3>
               <div class="skill-items">
                 <span class="skill-item">Git</span>
                 <span class="skill-item">Linux</span>
-                <span class="skill-item">ASP.NET</span>
                 <span class="skill-item">Unity</span>
                 <span class="skill-item">Blender</span>
                 <span class="skill-item">Maya</span>
@@ -249,6 +266,51 @@
         <div class="container">
           <h2 class="section-title">Projects</h2>
           <div class="projects-grid">
+            <div class="project-card">
+              <div class="project-image">
+                <div class="project-placeholder">
+                  <img
+                    src="/portfolio/project-images/all_blobs.png"
+                    alt="Rendered acrylic paint pigment simulations"
+                    style="width: 100%; height: 100%; object-fit: cover;"
+                  >
+                </div>
+              </div>
+              <div class="project-content">
+                <h3>Master's Thesis – Realistic Pigmented Material Mixture Simulation</h3>
+                <p>
+                  A simulation and rendering pipeline for highly viscous acrylic paint mixed
+                  with an animated palette knife. The project combines Material Point Method
+                  simulation, pigment-based color mixing, and adaptive ray marching to produce
+                  rendered image sequences and videos.
+                </p>
+                <p>
+                  Thesis text accessible at:
+                  <a
+                    href="https://dspace.cvut.cz/entities/publication/1e409a08-c305-4adc-91a1-08fb2b57c61b"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="nav-link"
+                  >
+                    CTU DSpace
+                  </a>
+                </p>
+                <div class="project-tech">
+                  <span>C++</span>
+                  <span>OpenGL</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/Natashaaak/pigment_mixing"
+                    class="project-link"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    GitHub
+                  </a>
+                </div>
+              </div>
+            </div>
             <div class="project-card">
               <div class="project-image">
                 <div class="project-placeholder">
@@ -418,7 +480,7 @@
       <!-- Footer -->
       <footer class="footer">
         <div class="container">
-          <p>&copy; 2025 Natálie Kaslová. All rights reserved.</p>
+          <p>&copy; 2026 Natálie Kaslová. All rights reserved.</p>
         </div>
       </footer>
     </div>
