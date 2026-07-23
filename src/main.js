@@ -139,9 +139,14 @@ class Portfolio {
     
     navLinks.forEach(link => {
       link.addEventListener('click', (e) => {
+        const href = link.getAttribute('href')
+
+        if (!href || !href.startsWith('#')) {
+          return
+        }
+
         e.preventDefault()
-        const targetId = link.getAttribute('href')
-        const targetSection = document.querySelector(targetId)
+        const targetSection = document.querySelector(href)
         
         if (targetSection) {
           const offsetTop = targetSection.offsetTop - 70 // Account for fixed navbar
